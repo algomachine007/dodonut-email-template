@@ -64,14 +64,15 @@
         max-width: 658px;
         border-spacing: 0;
         font-family: sans-serif;
+        overflow: hidden;
       }
       .button {
-        background-color: #4980d2;
-        color: white;
+        background-color: var(--secondary-black);
+        border: 1px solid var(--intensive-green);
         text-decoration: none;
-        padding: 12px 20px;
-        border-radius: 5px;
-				font-weight: bold;
+        width: 100%;
+        padding: 18px 40px;
+        border-radius: 4px;
       }
 			.two-columns{
 				text-align: center;
@@ -104,14 +105,19 @@
         color: var(--primary-white);
         font-size:22px;
         font-weight: 500;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
 
       .container{
-        max-width: 530px;
-        margin: 0 auto;
-        margin: 65px auto; 
-        /* position:absolute;
-        transform: translate(-50%; 50%); */
+        width: 530px;  
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
       }
 
       .hero-section{
@@ -119,6 +125,7 @@
         text-align: center;
         padding: 35px;
         position: relative;
+        height: 285px;
       }
 
        .hero-section h3{
@@ -137,11 +144,35 @@
         top: 0;
       }
 
-        .hero-section .adornment-mid{
+      .hero-section .adornment-mid{
         position: absolute;
         right: 0;
         top: 75px;
-       
+    
+      }
+      .hero-section .adornment-low{
+        position: absolute;
+        right: 0;
+        top: 21%;
+      }
+
+        .hero-section .adornment-lower{
+        position: absolute;
+        top: 60%;
+        left: 66.5%;
+      }
+
+      .card-wrapper{
+        position: relative;
+      }
+
+      .card{
+        margin: 65px auto;
+        border: 1px solid red;
+        width: 100%;
+        max-width: 530px;
+    
+        
       }
 
    /* heading and thank you hero  stops*/
@@ -155,6 +186,23 @@
 					padding-left: 0!important;
 		    	padding-right: 0!important;
 					}
+
+      .hero-section .adornment-lower{
+       display: none;
+      }
+
+      h1{
+        font-size: 30px;
+        line-height: 42.5px
+      }
+
+      h3{
+        font-size: 20px !important;
+      }
+
+      .container{
+        width: 85%;  
+      }
       }
     </style>
   </head>
@@ -169,17 +217,21 @@
           <td class="hero-section">
             <img class="adornment-top" src="img/top_adornment.svg" alt="Top Adornment">
               <img class="adornment-mid" src="img/mid_adornment.svg" alt="Top Adornment">
+                <img class="adornment-low" src="img/low_adornment.svg" alt="Top Adornment">
+                  <img class="adornment-lower" src="img/low_adornment.svg" alt="Top Adornment">
             <table width="100%">
               <tr>
                 <td class="logo">
-                  <a href="https://dodonut.com/" alt="Logo"
+                <a href="https://dodonut.com/" alt="Logo"
                     ><img
                       src="img/pngs/yellow_logo.png"
                       width="30"
                       style="margin-right: 10px;"
                       alt="Dodonut logo"
                       title="Dodonut Logo"
-                  />Dodonut</a>
+                  />Dodonut</a>  
+
+                   
                 </td>
               </tr>
             </table>
@@ -196,25 +248,13 @@
 
         <!-- LOGO AND HERO SECTION END-->
 
-        <!-- GIF BANNER IMAGE -->
 
-        <tr>
-          <td>
-            <a href="#"
-              ><img
-                src="img/snow.gif"
-                alt="Banner"
-                width="658"
-                style="max-width: 100%"
-            /></a>
-          </td>
-        </tr>
 
         <!-- TITLE, TEXT & BUTTON -->
 
         <tr>
-          <td style="padding-bottom: 40px;">
-            <table width="100%">
+          <td>
+            <table width="100%" class="card">
               <tr>
                 <td style="text-align: center; padding: 15px">
                   <p style="font-size: 20px; font-weight: bold">
@@ -234,7 +274,7 @@
                     <strong style="color: #4980d2">Course</strong>
                   </p>
 
-                  <a href="#" class="button">View Me</a>
+                  <a href="#" class="button">See all updates</a>
                 </td>
               </tr>
             </table>
