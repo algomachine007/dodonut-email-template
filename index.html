@@ -164,15 +164,22 @@
 
       .card-wrapper{
         position: relative;
+        background-color: #F2F6F1;
       }
+     .card-wrapper .adornment-lower-1{
+        position: absolute;
+        top: -40%;
+        right: -25%;
+        z-index: 1;
+      }  
 
       .card{
         margin: 65px auto;
-        border: 1px solid red;
         width: 100%;
         max-width: 530px;
-    
-        
+        z-index: 10;
+        position: relative;
+        background-color: white;
       }
 
    /* heading and thank you hero  stops*/
@@ -251,10 +258,10 @@
 
 
         <!-- TITLE, TEXT & BUTTON -->
-
         <tr>
-          <td>
+          <td class="card-wrapper">
             <table width="100%" class="card">
+                   <img class="adornment-lower-1" src="img/low_adornment.svg" alt="Top Adornment">  
               <tr>
                 <td style="text-align: center; padding: 15px">
                   <p style="font-size: 20px; font-weight: bold">
