@@ -1,0 +1,5 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect y="16" width="64" height="32" rx="6" fill="#6637EE"/>
+<rect x="44" width="64" height="32" rx="6" transform="rotate(90 44 0)" fill="#FB6612"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 48L12 16H44L44 48H12Z" fill="#CEFF1A"/>
+</svg>
