@@ -66,14 +66,6 @@
         font-family: sans-serif;
         overflow: hidden;
       }
-      .button {
-        background-color: #1C221B;
-        border: 1px solid #CEFF1A;
-        text-decoration: none;
-        width: 100%;
-        padding: 18px 40px;
-        border-radius: 4px;
-      }
 			a{
 				text-decoration: none;
 			}
@@ -159,8 +151,12 @@
         z-index: 10;
         position: relative;
         background-color: #fff;
-       
       }
+
+      .card-heading{
+        padding: 12px 0 0 48px;
+      }
+
       .card h2{
         font-size: 36px;
         font-weight: 500;
@@ -193,8 +189,42 @@
 
       .cta{
         background-color: #CEFF1A;
-       padding: 24px 48px 0px;
+        padding: 2px 48px;
+        height: 280px;
+        /* max-width: 530px;
+        margin: 0 auto; */
+
       }
+      .cta a:first-child{
+       color: #6637EE;
+      }
+
+      .cta h2 {
+        margin: 0px;
+      }
+
+      .cta p {
+        margin-bottom: 40px;
+      }
+
+      .cta img {
+        margin-left: 10px;
+      }
+
+      .button {
+        background-color: #1C221B;
+        border: 1px solid #CEFF1A;
+        text-decoration: none;
+        width: 120%; 
+        padding: 18px ;  
+        display: block;
+        text-align: center;
+        border-radius: 4px;
+        color: #CEFF1A;
+        font-size: 18px;
+      }
+
+
       
 
    /* heading and thank you hero  stops*/
@@ -225,6 +255,10 @@
       .container{
         width: 85%;  
       }
+      .cta {
+        padding: 18px 24px;
+      }
+   
       }
     </style>
   </head>
@@ -314,6 +348,7 @@
 										<tr>
                          <h2> Frequency </h2>
                       <td>
+                       
                       <img src="img/pngs/frequency.svg" alt="">
                       </td>
                       <td>
@@ -325,21 +360,21 @@
                 </td>
               </tr>
               <tr>
-                <td class="cta">
-                  <table>
-										<tr>
-                         <h2> Frequency </h2>
+            <td class="cta">
+              <table>
+								<tr>
+                  <h2> Can’t wait for the <a href="http://dodonut.com">next newsletter?</a></h2>
                       <td>
-                      <img src="img/pngs/frequency.svg" alt="">
                       </td>
                       <td>
-                        <h3>We will send you the newsletter straight to your inbox <a href="http://dodonut.com">every other week</a> </h3>
-                        <p>No spam, only good stuff. </p>
+                        <p> Check latest design updates on our website!</p>
+                        <a href="#" class="button">See all updates
+
+                          <img src="img/button-arrow.svg" alt="">
+                        </a>
                       </td>
 										</tr>
 									</table>
-                </td>
-              </tr>
             </table>
           </td>
         </tr>
@@ -362,7 +397,7 @@
 
 							<tr>
 								<td height="10px" style="background-color:#4980d2"></td>
-                <a href="#" class="button">See all updates</a>
+              
 							</tr>
 						</table>
 					</td>
