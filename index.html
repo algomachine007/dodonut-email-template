@@ -9,6 +9,9 @@
 
       /* font injection */
       @import url('http://fonts.cdnfonts.com/css/clash-display');
+      @import url('http://fonts.cdnfonts.com/css/sf-pro-display');
+ 
+                
 
 
       html *{
@@ -53,7 +56,7 @@
       .wrapper {
         width: 100%;
         table-layout: fixed;
-        background-color: var(--intensive-green);
+        background-color: var(--primary-white);
         padding-bottom: 40px;
       }
 
@@ -74,27 +77,6 @@
         padding: 18px 40px;
         border-radius: 4px;
       }
-			.two-columns{
-				text-align: center;
-				font-size: 0;  
-				padding: 40px 0;
-			}
-
-			.two-columns .column{
-				width: 100%;
-				max-width: 300px;
-				display: inline-block;
-				vertical-align: top;
-			}
-			.two-columns .padding{
-				padding: 20px;
-			}
-
-			.two-columns .content{
-				text-align: left;
-				font-size: 15px;
-				line-height: 20px;
-			}
 			a{
 				text-decoration: none;
 			}
@@ -156,7 +138,7 @@
         top: 21%;
       }
 
-        .hero-section .adornment-lower{
+      .hero-section .adornment-lower{
         position: absolute;
         top: 60%;
         left: 66.5%;
@@ -169,18 +151,48 @@
      .card-wrapper .adornment-lower-1{
         position: absolute;
         top: -40%;
-        right: -25%;
+        right: -28%;
         z-index: 1;
       }  
 
       .card{
-        margin: 65px auto;
+        margin: 62px auto;
         width: 100%;
         max-width: 530px;
         z-index: 10;
         position: relative;
-        background-color: white;
+        background-color: var(--primary-white);
+        padding: 24px 48px 0px;
       }
+      .card h2{
+        font-size: 36px;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+
+      .text-image-card{
+      }
+      .text-image-card img {
+        margin-bottom: 100px;
+        padding: 0 12px 0 0;
+        max-width: 55px;
+        
+      }
+      .text-image-card h3 {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 35px;
+      }
+      .text-image-card a {
+       color: var(--primary-purple)
+      }
+       .text-image-card p {
+      font-family: 'SF Pro Display';
+      font-size: 18px;
+      line-height: 27px;
+      color: var(--secondary-black);
+      }
+      
 
    /* heading and thank you hero  stops*/
       @media screen and (max-width: 658px) {
@@ -216,10 +228,7 @@
   <body>
     <center class="wrapper">
       <table class="main" width="100%">
-
-
         <!-- LOGO AND HERO SECTION START-->
-
         <tr>
           <td class="hero-section">
             <img class="adornment-top" src="img/top_adornment.svg" alt="Top Adornment">
@@ -257,87 +266,68 @@
 
 
 
-        <!-- TITLE, TEXT & BUTTON -->
+        <!-- CARD SECTION -->
         <tr>
           <td class="card-wrapper">
-            <table width="100%" class="card">
-                   <img class="adornment-lower-1" src="img/low_adornment.svg" alt="Top Adornment">  
+             <table width="100%" class="card">
+              <img class="adornment-lower-1" src="img/low_adornment.svg" alt="Top Adornment">  
               <tr>
-                <td style="text-align: center; padding: 15px">
-                  <p style="font-size: 20px; font-weight: bold">
-                    HTML Course <strong style="color: #4980d2">Course</strong>
-                  </p>
-                  <p
-                    style="
-                      font-size: 15px;
-                      line-height: 23px;
-                      padding: 5px 0 15px;
-                    "
-                  >
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Blanditiis eum, sapiente repudiandae impedit natus, quod
-                    commodi officia libero enim laudantium alias nihil sit sunt
-                    non cupiditate? Dolores explicabo inventore vel.
-                    <strong style="color: #4980d2">Course</strong>
-                  </p>
-
-                  <a href="#" class="button">See all updates</a>
+                <td class="card-heading">
+                  <h2>
+                    What to expect?  
+                  </h2>
+                </td>   
+              </tr>
+              <tr>
+                <td class="text-image-card">
+                  <table>
+										<tr>
+                      <td>
+                      <img src="img/pngs/tips.svg" alt="">
+                      </td>
+                      <td>
+                        <h3>Tips on how to be a <a href="http://dodonut.com"> better designer </a> </h3>
+                        <p>We are going to send you some good tips on how to become a better UX/UI Designer and how to find an unusual approach to your designs. </p>
+                      </td>
+										</tr>
+									</table>
+                </td>
+              </tr>
+                <tr>
+                <td class="text-image-card">
+                  <table>
+										<tr>
+                      <td>
+                      <img src="img/pngs/carbon.svg" alt="">
+                      </td>
+                      <td>
+                        <h3>Best ways to reduce your <a href="http://dodonut.com">  carbon footprint</a> </h3>
+                        <p>Dodonut is all about saving the environment. Want to reduce CO2 emissions on your website? We will tell you how to do it! </p>
+                      </td>
+										</tr>
+									</table>
+                </td>
+              </tr>
+                <tr>
+                <td class="text-image-card">
+                  <table>
+										<tr>
+                         <h2> Frequency </h2>
+                      <td>
+                      <img src="img/pngs/frequency.svg" alt="">
+                      </td>
+                      <td>
+                        <h3>We will send you the newsletter straight to your inbox <a href="http://dodonut.com">every other week</a> </h3>
+                        <p>No spam, only good stuff. </p>
+                      </td>
+										</tr>
+									</table>
                 </td>
               </tr>
             </table>
+            
           </td>
         </tr>
-
-        <!-- BLUE BORDER -->
-
-				<tr>
-					<td height="5" style="background-color:#4980d2"></td>
-				</tr>
-
-        <!-- TWO COLUMN SECTION -->
-
-				<tr>
-					<td>
-						<table width="100%">
-							<tr>
-								<td class="two-columns">
-									<table class="column">
-										<tr>
-											<td class="padding">
-
-											<table class="content">
-												<tr>
-													<td>
-														<a href="#"><img src="img/560x420.jpg" width="260" alt="" style="max: width 260px;"></a>
-													</td>
-												</tr>
-											</table>
-
-											</td>
-										</tr>
-									</table>
-											<table class="column">
-										<tr>
-											<td class="padding">
-
-											<table class="content">
-												<tr>
-													<td>
-															<p style="font-size: 17px;font-weight:bold;padding-bottom: 15px;">Create Designs </p>
-															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae error n </p>
-													</td>
-												</tr>
-											</table>
-
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-
         <!-- BLUE BACKGROUND QUOTE -->
 
 				<tr>
@@ -372,6 +362,7 @@
 
 							<tr>
 								<td height="10px" style="background-color:#4980d2"></td>
+                <a href="#" class="button">See all updates</a>
 							</tr>
 						</table>
 					</td>
